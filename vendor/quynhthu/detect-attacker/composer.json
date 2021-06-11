@@ -1,0 +1,34 @@
+{
+    "name": "quynhthu/detect-attacker",
+    "description": "Using AI to detection attacker (sql, xss)",
+    "keywords": ["AI", "detection", "sql","xss"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "quynhnguyen",
+            "email": "17520966@gm.uit.com"
+        },
+        {
+            "name": "thule",
+            "email": "thuicetea@gmail.com"
+        }
+       
+    ],
+    "require": {
+        "php": ">=5"
+
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "quynhthu\\DetectAttacker\\ServiceProvider"
+          ]
+        }
+    },
+
+    "autoload": {
+        "psr-4": {
+            "quynhthu\\DetectAttacker\\": "src"
+        }
+    }
+}
