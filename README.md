@@ -1,8 +1,8 @@
-<h1 align="center">Detect Attacker</h1>
+<h1 align="center">Module Detection</h1>
 <p align="center">
-    <a href="https://packagist.org/packages/haruncpi/laravel-log-reader"><img src="https://badgen.net/packagist/v/haruncpi/laravel-log-reader" /></a>
+    <a href="https://packagist.org/packages/haruncpi/laravel-log-reader"><img src="https://badgen.net/docker/size/library/ubuntu" /></a>
+     <a href="https://packagist.org/packages/haruncpi/laravel-log-reader"><img src="https://badgen.net//docker/pulls/library/ubuntu" /></a>
     <a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://badgen.net/github/license/micromatch/micromatch" /></a>
-     <a href=""><img src="https://badgen.net/packagist/dt/quynhthu/detect-attacker"/></a>
     <a href="https://www.facebook.com/lnmthu1"><img src="https://badgen.net/badge/facebook/thule/3b5998"/></a>
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
 </p>
@@ -12,14 +12,12 @@
 
 ## Install
 ```bash
-composer require quynhthu/detect-attacker
+git clone https://github.com/lnmthu/module_detection.git
 ```
 
 ## Use 
 ```bash
-# return string
-use quynhthu\DetectAttacker\DetectAttacker;
-return (new DetectAttacker("' or 1=1 # "))->handle();
+cd module_detection && docker-compose up -d --build
 ```
-## Change Log
-v2.1
+## Access
+<a href="localhost:8080/?detect=string_need_to_be_detected">localhost:8080/?detect=string_need_to_be_detected</a>
