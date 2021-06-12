@@ -1,4 +1,4 @@
-<h1 align="center">Module Detection</h1>
+<h1 align="center">Detection Module</h1>
 <p align="center">
     <a href="https://hub.docker.com/repository/docker/thuicetea/module_detection"><img src="https://badgen.net/docker/size/library/ubuntu" /></a>
      <a href="https://hub.docker.com/repository/docker/thuicetea/module_detection"><img src="https://badgen.net/docker/pulls/library/ubuntu" /></a>
