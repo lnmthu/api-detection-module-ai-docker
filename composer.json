@@ -1,0 +1,5 @@
+{
+    "require": {
+        "quynhthu/detect-attacker": "^2.4"
+    }
+}
