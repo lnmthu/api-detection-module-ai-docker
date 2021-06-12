@@ -1,0 +1,76 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "89bc41835e60de1b79415d0b54c1ca6b",
+    "packages": [
+        {
+            "name": "quynhthu/detect-attacker",
+            "version": "2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lnmthu/attacker_detection.git",
+                "reference": "49a614e45dd449fa254e92bb2190ffa3d7b2f468"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lnmthu/attacker_detection/zipball/49a614e45dd449fa254e92bb2190ffa3d7b2f468",
+                "reference": "49a614e45dd449fa254e92bb2190ffa3d7b2f468",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "quynhthu\\DetectAttacker\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "quynhthu\\DetectAttacker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "quynhnguyen",
+                    "email": "17520966@gm.uit.com"
+                },
+                {
+                    "name": "thule",
+                    "email": "thuicetea@gmail.com"
+                }
+            ],
+            "description": "Using AI to detection attacker (sql, xss)",
+            "keywords": [
+                "ai",
+                "detection",
+                "sql",
+                "xss"
+            ],
+            "support": {
+                "issues": "https://github.com/lnmthu/attacker_detection/issues",
+                "source": "https://github.com/lnmthu/attacker_detection/tree/2.4"
+            },
+            "time": "2021-06-11T17:35:01+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
