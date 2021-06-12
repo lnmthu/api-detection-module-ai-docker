@@ -7,7 +7,7 @@
     <a href="https://www.facebook.com/lnmthu1"><img src="https://badgen.net/badge/facebook/thule/3b5998"/></a>
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
 </p>
-<p align="center">Using AI (CNN) to detect attacker is XSS or SQL</p>
+<p align="center">Use AI (CNN) to detect attacker is XSS or SQL</p>
 
 
 
