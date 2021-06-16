@@ -22,5 +22,5 @@ cd module_detection && docker-compose up -d --build
 ```
 ## Access
 ```bash
-localhost:8080/?detect=string_need_to_be_detected
+localhost:8080/?text=' or 1=1 #
 ```
