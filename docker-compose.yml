@@ -1,13 +1,7 @@
 version: "3.7"
 services:
   app:
-    build:
-      args:
-        user: sammy
-        uid: 1000
-      context: ./
-      dockerfile: .docker/Dockerfile
-    # image: dev/module-detection:v2
+    image: thuicetea/module_detection:v1
     container_name: module-detection-app
     restart: always
     ports: 
@@ -15,23 +9,3 @@ services:
     working_dir: /var/www/html
     volumes:
       - ./:/var/www/html
-    # networks:
-    #   - owasp
-#   db:
-#     image: mysql:5.7
-#     container_name: owasp-db
-#     restart: always
-#     environment:
-#       MYSQL_DATABASE: ${DB_DATABASE}
-#       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
-#       MYSQL_PASSWORD: ${DB_PASSWORD}
-#       MYSQL_USER: ${DB_USERNAME}
-#       SERVICE_TAGS: dev
-#       SERVICE_NAME: mysql
-#     volumes:
-#       - ./docker-compose/mysql:/docker-entrypoint-initdb.d
-#     networks:
-#       - owasp
-# networks:
-#   owasp:
-#     driver: bridge
