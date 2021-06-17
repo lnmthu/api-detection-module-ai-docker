@@ -27,6 +27,15 @@ COPY . /var/www/html
 
 # RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# RUN apt install -y python3 python3.pip
+# RUN pip3 install --upgrade pip
+# RUN pip3 install --upgrade setuptools pip
+# RUN pip3 install numpy
+# RUN pip3 install pandas
+# RUN apt install -y python3-opencv
+# RUN pip3 install keras
+# RUN pip3 install  --upgrade tensorflow
+
 RUN chown -R www-data:www-data /var/www/html \
     && a2enmod rewrite
 
