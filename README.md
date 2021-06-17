@@ -19,7 +19,7 @@ git clone https://github.com/lnmthu/module_detection.git
 ```bash
 cd module_detection && docker-compose up -d --build
 ```
-## Access
+## Test
 ```bash
 localhost:8080/?text=' or 1=1 #
 ```
