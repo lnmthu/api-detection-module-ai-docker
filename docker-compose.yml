@@ -1,7 +1,13 @@
 version: "3.7"
 services:
   app:
-    image: thuicetea/module_detection:v1
+    build:
+      args:
+        user: sammy
+        uid: 1000
+      context: ./
+      dockerfile: .docker/Dockerfile
+    image: thuicetea/module_detection:v2
     container_name: module-detection-app
     restart: always
     ports: 
