@@ -8,12 +8,13 @@ import cv2
 import keras
 from keras.models import Sequential
 import sys
+import json
 
 
 a = ''
 for word in sys.argv[1:]:
     a += word + ' '
-
+text = a
 
 model_log = keras.models.load_model("vendor/quynhthu/detect-attacker/sqldata1")
 def convert_to_ascii(sentence):
@@ -92,13 +93,14 @@ a=image
 a= a.reshape(1,100,100,1)
 p = model_log.predict(a)#Nếu kết quả dự đoán lớn hơn 0.5 thì suy ra nó là tấn công
 if p>0.5:
-   p=2
+   p="SQL"
 else: 
-   p=0
+   p="Normal"
+
+print('{"test":"'+text+'", "result":"'+p+'"}')
 #   pred=np.argmax(p)cj ở
 #   result.append(pred) 
 #   result.append(p)  
-print (p)
 """
 arr=np.zeros(len(array))
 for i in range(len(array)):
