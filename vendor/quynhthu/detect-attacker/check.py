@@ -66,8 +66,8 @@ def convert_to_ascii(sentence):
       zer[i]=sentence_ascii[i]
    zer.shape=(100, 100)
    return zer
+   
 # clean data
-
 def clean_sqli_data(data):    
    for i in data:
       i=i.replace('\n', '')
@@ -80,42 +80,16 @@ def clean_sqli_data(data):
    return data
 
 result = []
-#a=np.zeros(len(sys.argv))
-#arr=np.zeros((len(sys.argv),100,100))
-#a='<script>alert(document.cookie)</script>'
-#for i in range(len(sys.argv)):
-#   a= clean_sqli_data(a)
 image=convert_to_ascii(a)
 x=np.asarray(image,dtype='float')
 image =  cv2.resize(x, dsize=(100,100), interpolation=cv2.INTER_CUBIC)
 image/=128
 a=image
 a= a.reshape(1,100,100,1)
-p = model_log.predict(a)#Nếu kết quả dự đoán lớn hơn 0.5 thì suy ra nó là tấn công
+p = model_log.predict(a)
 if p>0.5:
    p="SQL"
 else: 
    p="Normal"
 
 print('{"text":"'+text+'", "result":"'+p+'"}')
-#   pred=np.argmax(p)cj ở
-#   result.append(pred) 
-#   result.append(p)  
-"""
-arr=np.zeros(len(array))
-for i in range(len(array)):
-   a= clean_sqli_data(array[i])
-   image=convert_to_ascii(a)
-   x=np.asarray(image,dtype='float')
-   image =  cv2.resize(x, dsize=(100,100), interpolation=cv2.INTER_CUBIC)
-   image/=128
-   arr[i]=image
-arr=arr.reshape(shape[0],100,100,1)
-p=model_log.predict(arr)
-pred=[]
-for i in range(len(p))
-   pred[i]=np.argmax(p[i])
-print(pred)
-"""
-
-
