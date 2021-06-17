@@ -20,5 +20,5 @@ cd module_detection && docker-compose up -d --build
 ```
 ## Test
 ```bash
-curl -d "text=' or 1=1 #" -X POST http://localhost:8080
+curl -d "text=' or 1=1 #" http://localhost:8080
 ```
