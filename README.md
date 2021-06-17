@@ -8,7 +8,7 @@
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
 </p>
 <p align="center">Use AI (CNN) to detect attacker is XSS or SQL</p>
-<img style="display: block; margin-left: auto;margin-right: auto" src = "https://i.imgur.com/uXT1pYn.png">
+<img src = "https://i0.wp.com/s1.uphinh.org/2021/06/17/nh-chp-Man-hinh-2021-06-17-luc-07.10.44.png">
 
 ## Install
 ```bash
