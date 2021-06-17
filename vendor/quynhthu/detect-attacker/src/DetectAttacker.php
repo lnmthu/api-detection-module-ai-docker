@@ -18,15 +18,7 @@ class DetectAttacker
     public function handle()
     { 
         $command = escapeshellcmd("python3 vendor/quynhthu/detect-attacker/check.py ".$this->search);
-        $result = (int)shell_exec($command);
-        $type = '';
-        if ($result == self::NORMAL) {
-            $type = 'Normal';
-        } elseif ($result== self::XSS) {
-            $type = 'XSS';
-        } elseif ($result == self::SQL) {
-            $type = 'SQL';
-        }
-        return $type;
+        $result = shell_exec($command);
+        return $result;
     }
 }

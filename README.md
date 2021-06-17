@@ -8,7 +8,6 @@
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
 </p>
 <p align="center">Use AI (CNN) to detect attacker is XSS or SQL</p>
-<img src = "https://i0.wp.com/s1.uphinh.org/2021/06/17/nh-chp-Man-hinh-2021-06-17-luc-07.10.44.png">
 
 ## Install
 ```bash
@@ -21,5 +20,5 @@ cd module_detection && docker-compose up -d --build
 ```
 ## Test
 ```bash
-localhost:8080/?text=' or 1=1 #
+curl -d "text=' or 1=1 #" -X POST http://localhost:8080
 ```
