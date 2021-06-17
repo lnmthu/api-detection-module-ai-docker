@@ -97,7 +97,7 @@ if p>0.5:
 else: 
    p="Normal"
 
-print('{"test":"'+text+'", "result":"'+p+'"}')
+print('{"text":"'+text+'", "result":"'+p+'"}')
 #   pred=np.argmax(p)cj ở
 #   result.append(pred) 
 #   result.append(p)  
