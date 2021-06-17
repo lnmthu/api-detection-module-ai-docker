@@ -8,8 +8,7 @@
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
 </p>
 <p align="center">Use AI (CNN) to detect attacker is XSS or SQL</p>
-<img src="https://i.imgur.com/fAPtCMI.png">
-
+<img style="display: block; margin-left: auto;margin-right: auto" src = "https://i.imgur.com/uXT1pYn.png">
 ## Install
 ```bash
 git clone https://github.com/lnmthu/module_detection.git
