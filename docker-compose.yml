@@ -7,7 +7,7 @@ services:
         uid: 1000
       context: ./
       dockerfile: .docker/Dockerfile
-    image: thuicetea/module_detection:v2
+    image: thuicetea/module_detection:version-model-final-one
     container_name: module-detection-app
     restart: always
     ports: 
