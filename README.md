@@ -18,7 +18,7 @@ docker run --privileged -d -p 8080:80 thuicetea/module_detection:version-model-f
 ## Test with
 ### UI
 ```bash
-# 1.Access URL
+# Access URL
 http://localhost:8080/
 ```
 
