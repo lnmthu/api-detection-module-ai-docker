@@ -1,5 +1,5 @@
 
-FROM thuicetea/module_detection:version-model-final-one
+FROM thuicetea/module_detection:version-model-final-one-UI
 
 # USER root
 

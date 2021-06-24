@@ -15,7 +15,7 @@ for word in sys.argv[1:]:
     a += word + ' '
 text = a
 
-model_log = keras.models.load_model("vendor/quynhthu/detect-attacker/model-version-one")
+model_log = keras.models.load_model("model-version-one")
 def convert_to_ascii(sentence):
    sentence_ascii=[]
    for i in sentence:
