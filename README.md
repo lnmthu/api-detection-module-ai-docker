@@ -2,7 +2,7 @@
 <p align="center">
     <a href="https://hub.docker.com/repository/docker/thuicetea/module_detection"><img src="https://badgen.net/docker/size/library/ubuntu" /></a>
      <a href="https://hub.docker.com/repository/docker/thuicetea/module_detection"><img src="https://badgen.net/docker/pulls/library/ubuntu" /></a>
-      <a href="https://lumen.laravel.com/"><img src="https://badgen.net/badge/lumen/orange/8.0" /></a>
+      <a href="https://lumen.laravel.com/"><img src="https://badgen.net/badge/lumen/8.0/orange" /></a>
     <a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://badgen.net/github/license/micromatch/micromatch" /></a>
     <a href="https://www.facebook.com/lnmthu1"><img src="https://badgen.net/badge/facebook/thule/3b5998"/></a>
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
@@ -16,13 +16,13 @@ docker run --privileged -d -p 8080:80 thuicetea/module_detection:version-model-f
 ```
 
 ## Test with
-# UI
+#### UI
 ```bash
-# Access URL
+# 1.Access URL
 http://localhost:8080/
 ```
 
-# Curl
+#### Curl
 ```bash
 # Call API (return JSON)
 curl -d "search=' or 1=1 #" http://localhost:8080/api
