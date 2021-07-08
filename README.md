@@ -8,22 +8,13 @@
     <a href="https://www.facebook.com/nhuquynh9985"><img src="https://badgen.net/badge/facebook/nhuquynh/3b5998"/></a>
 </p>
 <p align="center">Use AI (CNN) to detect attacker is XSS or SQL</p>
-<img src="https://i.imgur.com/7ppBhpL.png">
 
 ## Install
 ```bash
 docker run --privileged -d -p 8080:80 thuicetea/module_detection:version-model-final-one-UI
 ```
 
-## Test with
-### UI
+## Test
 ```bash
-# Access URL
-http://localhost:8080/
-```
-
-### Curl
-```bash
-# Call API (return JSON)
 curl -d "search=' or 1=1 #" http://localhost:8080/api
 ```
