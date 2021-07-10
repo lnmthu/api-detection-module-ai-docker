@@ -11,7 +11,7 @@
 
 ## Install
 ```bash
-docker run --privileged -d -p 8080:80 thuicetea/module_detection:model-version-two
+docker run --privileged -d -p 8080:80 thuicetea/module_detection:model-version-one
 ```
 
 ## Test
