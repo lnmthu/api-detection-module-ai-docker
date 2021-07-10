@@ -20,7 +20,6 @@ class DetectionController extends Controller
     public function api(Request $request)
     {
         $search = $request->input("search") ?? "";
-        var_dump($search)."\n";
         $search = urlencode($search);
         $command = escapeshellcmd("python3 check.py ".$search);
         $result = shell_exec($command);
