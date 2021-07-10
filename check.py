@@ -14,7 +14,7 @@ from urllib.parse import unquote
 strInput = ''
 for word in sys.argv[1:]:
     strInput += word + ' '
-a = unquote(strInput)
+a = unquote(strInput).replace("+", " ")
 text = a
 
 model_log = keras.models.load_model("model")
