@@ -9,6 +9,7 @@ import keras
 from keras.models import Sequential
 import sys
 from urllib.parse import unquote
+import json
 
 
 strInput = ''
@@ -75,4 +76,10 @@ elif pred==1:
 elif pred==2: 
    pred="SQL"
 
-print('{"text":"'+text+'", "result":"'+pred+'"}')
+# return json
+xjson = {
+  "text": text,
+  "result": pred
+}
+yjson = json.dumps(xjson)
+print(yjson) 
